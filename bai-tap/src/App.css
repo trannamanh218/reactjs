@@ -5,8 +5,64 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  
 }
-
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list {
+  display: flex;
+  justify-content: center;
+}
+.list li {
+  list-style: none;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+.icon-logo {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-logo p {
+  margin: 0px 0px 0px 5px;
+}
+.titleproduct {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-top: 80px;
+}
+.danhsach {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.danhsach .listproduct {
+  width: 22%;
+}
+.danhsach .listproduct img {
+  width: 100%;
+  justify-content: space-between;
+}
+.footer{
+  display: flex;
+  justify-content:space-between;
+  background: rgb(32, 32, 32);
+  color: rgb(206, 206, 206);
+  padding: 10px 100px 20px 100px;
+}
+.footer>div>ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer>div>ul>li {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 20px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
