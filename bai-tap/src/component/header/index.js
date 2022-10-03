@@ -1,4 +1,4 @@
-const Header = ({ logo, lisProduct }) => {
+const Header = ({ logo }) => {
     const abc = () => {
         alert("Xin chào quý khách")
     }
