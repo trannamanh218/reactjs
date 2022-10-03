@@ -28,9 +28,10 @@ function App() {
       piece: "10.000.00Đ"
     }
   ];
+  const listNavBar = ["đồ nam", "đồ nữ", "danh sách", "phụ kiện"]
   return (
-    <div class="container">
-      <Header logo={logo}/>
+    <div className="container">
+      <Header logo={logo} listNavBar = {listNavBar}/>
       <Main coverImg = {coverImg} 
        productItem = {productItem}/>
       <Footer />

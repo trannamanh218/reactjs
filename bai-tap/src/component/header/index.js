@@ -1,15 +1,18 @@
-const Header = ({ logo }) => {
-    const abc = () => {
-        alert("Xin chào quý khách")
-    }
+const Header = ({ logo, listNavBar }) => {
+  const abc = () => {
+    alert("Xin chào quý khách");
+  };
   return (
-    <div class="nav">
+    <div className="nav">
       <img className="logo" src={logo} width="100px" />
-      <ul class="list">
-        <li onClick={abc}>Đồ nam</li>
-        <li onClick={abc}>Đồ nữ</li>
-        <li onClick={abc}>Phụ kiện</li>
-        <li onClick={abc}>Tin tức</li>
+      <ul className="list">
+        {listNavBar.map((item, index) => {
+          return (
+            <li onClick={abc} key={index}>
+              {item}
+            </li>
+          );
+        })}
       </ul>
       <div className="icon-logo">
         <p>logo1</p>
