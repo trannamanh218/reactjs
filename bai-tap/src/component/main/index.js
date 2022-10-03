@@ -5,7 +5,6 @@ const Main = ({ coverImg, productItem }) => {
       <h2 className="titleproduct">sản phẩm bán chạy</h2>
       <div className="danhsach">
         {productItem.map((items, index) => {
-          console.log(items, index);
           return (
             <div className="listproduct" key={index}>
               <img src={items.img} />
@@ -17,7 +16,6 @@ const Main = ({ coverImg, productItem }) => {
       </div>
       <div className="danhsach">
         {productItem.map((items, index) => {
-          console.log(items, index);
           return (
             <div className="listproduct" key={index}>
               <img src={items.img} />
@@ -29,7 +27,6 @@ const Main = ({ coverImg, productItem }) => {
       </div>
       <div className="danhsach">
         {productItem.map((items, index) => {
-          console.log(items, index);
           return (
             <div className="listproduct" key={index}>
               <img src={items.img} />
